@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('8 ball red fire.jpg');
+    background-size: cover;
+    color: #fff;
+  }
+  
+  .about-container {
+    background-color: rgba(0, 0, 0, 0.6); 
+    margin: 100px auto;
+    padding: 40px;
+    width: 70%;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+  }

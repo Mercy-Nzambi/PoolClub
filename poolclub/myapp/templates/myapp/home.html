@@ -1,0 +1,75 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sansiro Pool Club</title>
+  <link rel="stylesheet" href="{% static 'myapp/home-style.css' %}" />
+  <script src="{% static 'myapp/home-js.js' %}"></script>
+</head>
+<body>
+
+<div class="overlay">
+
+  <header>
+    <h1>Sansiro Pool Club</h1>
+    <nav>
+      <a href="{% url 'about' %}">About Us</a>
+
+  </nav>
+    <p>Play. Chill✌🏾. Belong.</p>
+  </header>
+
+  <div class="container">
+
+    <section class="perks">
+      <h2>Why Join Us?</h2>
+      <ul>
+        <li>Unlimited table access (12pm - 11pm)</li>
+        <li>Weekly tournaments & coaching sessions</li>
+        <li>Member-only hangouts & discounts</li>
+        <li>Guest passes & referral bonuses</li>
+      </ul>
+    </section>
+
+    <section class="games">
+      <h2>Available Games</h2>
+      <div class="game-gallery">
+        <img src="{% static 'myapp/pexels-aalsaibaie-18991746.jpg' %}" alt="8 Ball Pool">
+        <img src="{% static 'myapp/pexels-wavecrest-media-1963300444-28909614.jpg' %}" alt="Snooker">
+        <img src="{% static 'myapp/closeup-billiard-balls-sticks-table.jpg' %}" alt="Carrom">
+      </div>
+    </section>
+
+    <form name="myForm" onsubmit="return validateForm()" method="post" novalidate>
+      {% csrf_token %}
+      <h2>Membership Sign-Up</h2>
+      <label for="name">Full Name:</label>
+      <input type="text" id="fname" name="fname" />
+
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" />
+
+      <label for="membership">Membership Type:</label>
+      <select id="membership" name="membership">
+        <option value="monthly">Monthly - Ksh.20</option>
+        <option value="quarterly">Quarterly - Ksh.50</option>
+        <option value="annual">Annual - Ksh.200</option>
+      </select>
+
+      <label for="message">Why are you joining? (optional):</label>
+      <textarea id="message"name="message" rows="4"></textarea>
+
+      <button type="submit" value="Sumbit">Join Now</button>
+    </form>
+  </div>
+
+  <footer>
+    &copy; 2025 Sansiro Pool Club. All rights reserved.
+  </footer>
+
+</div>
+
+</body>
+</html>

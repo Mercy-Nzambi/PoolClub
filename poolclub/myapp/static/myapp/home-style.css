@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('blue 8 ball fire.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+  }
+  
+  
+  .overlay {
+    background-color: rgba(0, 0, 0, 0.75);
+    min-height: 100vh;
+    color: white;
+  }
+  
+
+  header {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+  }
+  
+  .container {
+    max-width: 900px;
+    margin: auto;
+    padding: 20px;
+  }
+  
+  h2 {
+    color: #f4b400;
+  }
+  
+
+  .perks {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+
+  .games {
+    margin: 20px 0;
+  }
+  .game-gallery {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  .game-gallery img {
+    width: 200px;
+    height: 150px;
+    object-fit: cover; 
+    border-radius: 10px;
+    border: 2px solid #f4b400;
+  }
+  form {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  input, select, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 8px;
+    margin-bottom: 16px;
+    border: none;
+    border-radius: 5px;
+  }
+  button {
+    background-color: #f4b400;
+    color: black;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #d29f00;
+  }
+  
+
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-top: 30px;
+  }
+/*Code Mercy has added*/
+input.invalid, select.invalid, textarea.invalid {
+    border-color: red;
+    box-shadow: 0 0 8px red;
+}
+
+/* Glow effects for valid input */
+input.valid, select.valid, textarea.valid {
+    border-color: green;
+    box-shadow: 0 0 8px green;
+}
